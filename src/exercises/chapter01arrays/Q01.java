@@ -6,7 +6,7 @@ package exercises.chapter01arrays;
 
 import java.util.HashMap;
 
-public class Arrays011 {
+public class Q01 {
     /*
     Method 01: Add every character to a HashMap and return false as soon as a character is added a second time.
      */

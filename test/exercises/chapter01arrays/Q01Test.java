@@ -3,16 +3,14 @@ package exercises.chapter01arrays;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Array;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-class Arrays011Test {
-    private static Arrays011 objUnderTest;
+class Q01Test {
+    private static Q01 objUnderTest;
 
     @BeforeAll
     static void setUp(){
-        objUnderTest = new Arrays011();
+        objUnderTest = new Q01();
     }
 
     @Test
