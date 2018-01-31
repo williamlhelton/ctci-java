@@ -24,4 +24,15 @@ class Q02Test {
         assertFalse(objUnderTest.runMethod01("abc123", "321cda"), "same length, not permutation");
         assertFalse(objUnderTest.runMethod01(null, "abc"), "one null string");
     }
+
+    @Test
+    void runMethod02() {
+        assertTrue(objUnderTest.runMethod02("", ""), "empty strings");
+        assertTrue(objUnderTest.runMethod02("abc", "bca"), "permutation");
+        assertTrue(objUnderTest.runMethod02("abc", "abc"), "identical strings");
+
+        assertFalse(objUnderTest.runMethod02("abc", "ab"), "different lengths");
+        assertFalse(objUnderTest.runMethod02("abc123", "321cda"), "same length, not permutation");
+        assertFalse(objUnderTest.runMethod02(null, "abc"), "one null string");
+    }
 }

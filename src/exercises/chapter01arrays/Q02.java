@@ -4,6 +4,7 @@ other.
  */
 package exercises.chapter01arrays;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class Q02 {
@@ -33,5 +34,24 @@ public class Q02 {
             map1.put(str2.charAt(i), map2.get(str2.charAt(i))+1);
         }
         return map1.keySet().equals(map2.keySet());
+    }
+
+    /*
+    Method 02: Split strings into character arrays, sort them, then compare them.
+     */
+    public boolean runMethod02(String str1, String str2){
+        //if either string is empty
+        if(str1 == null || str2 == null) return false;
+
+        //if string lengths are not equal
+        if(str1.length() != str2.length()) return false;
+
+        char[] charArray1 = str1.toCharArray();
+        char[] charArray2 = str2.toCharArray();
+
+        Arrays.sort(charArray1);
+        Arrays.sort(charArray2);
+
+        return Arrays.equals(charArray1, charArray2);
     }
 }
