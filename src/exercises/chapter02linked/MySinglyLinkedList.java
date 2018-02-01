@@ -56,7 +56,9 @@ public class MySinglyLinkedList<T> {
         System.out.println("Node " + count + ": " + i.data.toString());
     }
 
-    //Nodes are not directly accessible, but wrapped in the MySinglyLinkedList class
+    //Possible: Nodes are not directly accessible, but wrapped in the MySinglyLinkedList class
+    //so can make Node protected instead of public
+    //However if performing methods using individual Nodes can be made public
     //Initializing a new Node always lets next be null
     protected class Node{
         protected Node next;
