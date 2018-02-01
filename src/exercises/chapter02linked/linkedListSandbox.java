@@ -1,7 +1,5 @@
 package exercises.chapter02linked;
 
-import CtciLibrary.MySinglyLinkedList;
-
 public class linkedListSandbox {
     public static void main(String[] args) {
         /*

@@ -1,8 +1,8 @@
-package CtciLibrary;
+package exercises.chapter02linked;
 
 public class MySinglyLinkedList<T> {
     //this class always knows where the head Node is, but no other Nodes
-    private Node head;
+    Node head;
 
     public void append(T data){
         //create new tail to eventually place at end
@@ -58,9 +58,9 @@ public class MySinglyLinkedList<T> {
 
     //Nodes are not directly accessible, but wrapped in the MySinglyLinkedList class
     //Initializing a new Node always lets next be null
-    private class Node{
-        private Node next;
-        private T data;
+    protected class Node{
+        protected Node next;
+        protected T data;
 
         //constructor
         Node(T data){
