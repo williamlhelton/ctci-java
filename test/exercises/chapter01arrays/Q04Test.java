@@ -12,6 +12,7 @@ class Q04Test {
     static void setUp(){
         objUnderTest = new Q04();
     }
+
     @Test
     void runMethod01() {
         assertTrue(objUnderTest.runMethod01(""), "empty string");

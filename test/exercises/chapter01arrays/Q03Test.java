@@ -27,6 +27,6 @@ class Q03Test {
     void runMethod02() {
         assertEquals("dougbaker", objUnderTest.runMethod02("dougbaker"), "no spaces");
         assertEquals("doug%20baker", objUnderTest.runMethod02("doug baker  "), "one space");
-        assertEquals("do$20ug%20baker", objUnderTest.runMethod02("   do ug baker       "), "multiple spaces");
+        assertEquals("do%20ug%20baker", objUnderTest.runMethod02("   do ug baker       "), "multiple spaces");
     }
 }
